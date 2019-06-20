@@ -81,7 +81,7 @@ class ProtobufReader(object):
 
             # scalar
             else:
-                data[field[0].name] = field[1]
+                data[field[0].name] = [field[1]]
 
         return data
 
